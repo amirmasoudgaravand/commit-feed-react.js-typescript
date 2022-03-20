@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body {
+  background: #eee;
+}
+.page {
+  height: 100vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing-page-container {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #282d35;
+  overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 45px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
+  width: 29%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #2d2a2a;
+  margin-right: 1em;
+}
+
+.input:focus {
+  border: 1px solid rgb(250, 207, 114);
+  outline: none;
+}
+
+.input::placeholder {
+  color: #282d35;
+}
+
+.button {
+  height: 100%;
+  width: 10%;
+  background-color: salmon;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  color: #282d35;
+  box-sizing: content-box;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.results-container {
+  margin-top: 10px;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.repo-name {
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.repo-details-container {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.display {
+  display: none;
+}
+.details-row {
+  height: 20px;
+  width: 70%;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 20px;
+  color: #696c71;
+}
+
+.value {
+  color: salmon;
+}
+
+.loader {
+  color: salmon;
+  margin-left: 5%;
 }
